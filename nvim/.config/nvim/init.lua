@@ -911,6 +911,18 @@ require("lazy").setup({
 				-- See :h blink-cmp-config-keymap for defining your own keymap
 				preset = "default",
 
+				["<Tab>"] = {
+					function(cmp)
+						if cmp.snippet_active() then
+							return cmp.accept()
+						else
+							return cmp.select_and_accept()
+						end
+					end,
+					"snippet_forward",
+					"fallback",
+				},
+
 				-- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
 				--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
 			},
@@ -982,6 +994,7 @@ require("lazy").setup({
 			require("catppuccin").setup({
 				flavour = "mocha",
 				transparent_background = true,
+				no_underline = true,
 				--styles = {
 				--  comments = { italic = false }, -- Disable italics in comments
 				--},
