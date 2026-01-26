@@ -3,3 +3,5 @@
 	name = hatanlinh13
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main
