@@ -1,0 +1,12 @@
+[Unit]
+Description=Invert ThinkPad Mute LEDs (speaker + mic)
+After=pipewire-pulse.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/invert-mute-leds.sh
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
