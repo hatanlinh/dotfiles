@@ -8,6 +8,7 @@
 - bat
 - ripgrep
 - zoxide
+- fd
 - tldr
 - bottom
 - fastfetch
