@@ -1017,7 +1017,14 @@ require("lazy").setup({
     ---@module 'todo-comments'
     ---@type TodoOptions
     ---@diagnostic disable-next-line: missing-fields
-    opts = { signs = false },
+    opts = {
+      signs = false,
+      highlight = {
+        before = "",
+        keyword = "wide_fg",
+        after = "",
+      },
+    },
   },
 
   { -- Collection of various small independent plugins/modules
