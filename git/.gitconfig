@@ -1,7 +1,47 @@
 [user]
-	email = linh@fseek.net
-	name = hatanlinh
+  email = linh@fseek.net
+  name  = hatanlinh
 [core]
-	editor = nvim
+  editor = nvim
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[alias]
+  a  = add
+  b  = branch
+  c  = commit
+  aa = add --all
+  ap = add --patch
+  au = add --update
+  bv = branch --verbose
+  ca = commit --amend
+  ci = commit --interactive
+  cm = commit --message
+  co = checkout
+  cb = checkout -b
+  cp = cherry-pick
+  df = diff
+  dc = diff --cached
+  ds = diff --staged
+  fc = fetch
+  fa = fetch --all
+  gr = grep
+  lg = log
+  ls = ls-files
+  mg = merge
+  ma = merge --abort
+  mc = merge --continue
+  pl = pull
+  pr = pull --rebase
+  ps = push
+  pf = push --force-with-lease
+  rb = rebase
+  ra = rebase --abort
+  ri = rebase --interactive
+  rc = rebase --continue
+  rl = reflog
+  rr = remote
+  rs = restore --staged
+  rv = revert
+  sm = submodule
+  st = status
+  ss = status --short
