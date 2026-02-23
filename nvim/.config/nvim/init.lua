@@ -214,6 +214,13 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- Toggle swap
+vim.keymap.set("n", "<leader>z", ":set wrap!<CR>", { desc = "Toggle word wrap" })
+
+-- Move in visual line mode
+vim.keymap.set("n", "j", "gj", { desc = "Move down in visual line mode" })
+vim.keymap.set("n", "k", "gk", { desc = "Move up in visual line mode" })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
