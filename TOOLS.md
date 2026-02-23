@@ -12,3 +12,5 @@
 - tldr
 - bottom
 - fastfetch
+- yazi
+- lazygit
