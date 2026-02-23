@@ -3,12 +3,12 @@ if status is-interactive
     set -U fish_greeting
 
     alias ssh-github="ssh-add $HOME/.ssh/github"
+
     alias rm="rm -i"
     alias mv="mv -i"
 
     alias fetch="fastfetch"
     alias lg="lazygit"
-    alias g="git"
 
     zoxide init fish | source
 

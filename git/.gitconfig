@@ -43,5 +43,4 @@
   rs = restore --staged
   rv = revert
   sm = submodule
-  st = status
-  ss = status --short
+  ss = status
