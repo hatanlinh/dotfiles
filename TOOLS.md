@@ -14,3 +14,4 @@
 - fastfetch
 - yazi
 - lazygit
+- jq
