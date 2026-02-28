@@ -15,3 +15,5 @@
 - yazi
 - lazygit
 - jq
+- sed
+- awk
