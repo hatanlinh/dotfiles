@@ -212,6 +212,16 @@ animations {
     }
 }
 
+// Global blur configuration
+// These are the default values:
+blur {
+    // off
+    passes 3
+    offset 3
+    noise 0.02
+    saturation 1.5
+}
+
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
@@ -261,7 +271,10 @@ window-rule {
 }
 window-rule {
     match is-active=false
-    opacity 0.9
+    opacity 0.90
+    background-effect {
+        blur true
+    }
 }
 window-rule {
     match app-id=r#"firefox$"#
@@ -269,7 +282,10 @@ window-rule {
 }
 window-rule {
     match app-id=r#"kitty$"# is-active=true
-    opacity 0.95
+    opacity 0.90
+    background-effect {
+        blur true
+    }
 }
 
 // Open dms windows as floating by default
